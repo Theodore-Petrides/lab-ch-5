@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1 ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,6 +21,28 @@ img {
      display: block;
      }
 
+     /*style rules for Mobile*/
+     .mobile{
+       display: block;
+     }
+
+     .tab-desk {
+            display: none;
+          }
+
+  /*stly for header area*/
+    .mobile h1{
+      padding: 2%;
+      text-align: center;
+      font-family: 'Emblema One', cursive;
+    }
+
+    .mobile h3{
+      padding: 2%;
+      text-align: center;
+      font-family: 'Lora', serif;
+    }
+
 /* Style rules for navigation area */
      nav {
        background-color: #2a1f14;
@@ -28,15 +50,18 @@ img {
 
        nav ul {
          list-style-type: none;
-         margin: 0;
          text-align: center;
          }
 
          nav li {
-           display: inline-block;
+           display: block;
            font-size: 1.5em;
            font-family: Geneva, Arial, sans-serif;
            font-weight: bold;
+           border-top: .5px;
+           border-color: #f6eee4;
+
+
            }
 
            nav li a {
@@ -49,7 +74,7 @@ img {
              /* Style rules for main content */
              main  {
                padding: 2%;
-               font-family: Verdana, Arial, sans-serif;
+               font-family: 'Lora', serif;
                }
 
                main p {
@@ -79,10 +104,31 @@ img {
                   text-align: center;
                    font-weight: bold;
                    }
+
+                   .round{
+                     border-radius: 6px;
+
+                   }
+
+                   #info{
+                     margin-left: 10%
+
+                   }
          #contact{
            text-align: center;
          }
+         .tel-link{
+           background-color: #2a1f14;
+           padding: 2%;
+           width: 80%;
+           margin: 0 auto;
+         }
 
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
              /* Style rules for footer content */
              footer  {
                text-align: center;
